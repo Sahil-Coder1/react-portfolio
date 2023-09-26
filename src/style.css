@@ -117,6 +117,13 @@
   color: var(--primary);
     box-shadow: 0px 0px 8px 4px var(--primary);
   }
+  .strip{
+    width: 200px;
+    height: 40px;
+    background-color:var(--primary);
+    opacity: 0.5;
+    transform: translateX(145px) translateY(210px);
+  }
   .div-name2{
     margin-top: 50px;
   }
@@ -351,3 +358,116 @@
     color: var(--primary);
     font-weight: bold;
   }
+  @media only screen and (max-width:768px) {
+    *{
+      margin: 0px;
+    }
+    .body{
+      margin: 0px;
+    }
+    .header button{
+    margin: 15px 15px 8px 0px;
+    }
+    .menu-container{
+      width: '50%';
+     
+    }
+    .header ul{
+display: none;
+    }
+    .content-body2{
+   display: none;
+    }
+    .content-body{
+      display: block;
+    }
+    .div-name{
+      height: 100%;
+      width: 90%;
+      padding: 16px;
+    }
+    .div-name h1{
+      margin-top: -10px;
+     font-size: 50px;
+      font-weight: 900;
+    }
+    .div-name h1 p{
+      margin-top: -25px;
+       margin-left: 100px;
+       font-size: 50px;
+     }
+     .div-name p{
+      margin-top: 25px;     
+      word-spacing: 2px;
+    }.hire-btn{
+    margin-top: 25%;
+    }
+    .div-img{
+  
+      width: 100%;
+      padding: 0px;
+    }
+    .div-img img{
+      width: 60%;
+      height: 60%;
+    }
+    #sec-img{
+      display: none;
+     }
+     .strip{
+      width: 140px;
+     height: 20px;
+      transform: translateX(110px) translateY(90px);
+     }
+     .div-name2{
+      padding: 16px;
+     }
+     .services-div ul{
+      display: grid;
+     }
+     .round-box{
+      margin-top: 8px;
+     }
+     .my-projects{
+      padding: 16px;
+     }
+     .pro-type ul{
+      display:inline-block;
+     }
+     .work{
+      display: block;
+     }
+     .box-div{
+      width: 100%;
+      margin: 0px;
+     }
+     input[type="text"]{
+      width: 200px;
+     }
+     .together div{
+      padding: 8px 0px 8px 0px;
+         }
+     .together button{
+      width: auto;
+     }
+     .bottom-nav{
+      width: 100%;
+      transform: translateX(0px) translateY(0px);
+     }
+     .navigator{
+      padding: 0px;
+
+     }
+     .navigator ul{
+          width:100%;
+      display: none;
+    
+     }
+     .copyright{
+     transform: translateX(0px);
+    width: 100%; 
+    }
+     .test{
+      padding: 0px;
+     }
+    }
