@@ -9,12 +9,17 @@ Because I have passion of web and android developmet , and I liked so much the d
 
 # How to run 
 * You need to have node js installed if not install
-* You also need to have node js installed if not install using
+ 
+* To use Create React App, you need to have at least npm version 5.2
+
 * Now clone this repository
+
   ```
   git clone https://github.com/Sahil-Coder1/react-portafolio/
   ```
+
 * Now run the project using
+
 * ```
   cd react-portafolio
   npm start
