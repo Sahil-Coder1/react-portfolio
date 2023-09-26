@@ -417,19 +417,32 @@ display: none;
      .strip{
       width: 140px;
      height: 20px;
-      transform: translateX(110px) translateY(90px);
+      transform: translateX(85%) translateY(450%);
      }
      .div-name2{
       padding: 16px;
      }
      .services-div ul{
       display: grid;
+      padding: 8px;
+      
+     }
+     .services-div ul li{
+      text-align: center;
+      padding: 1% 8% ;
+     }
+     .message{
+      display: none;
      }
      .round-box{
+      width: 90%;
       margin-top: 8px;
      }
      .my-projects{
       padding: 16px;
+     }
+     .test p{
+      padding: 8px;
      }
      .pro-type ul{
       display:inline-block;
@@ -442,7 +455,7 @@ display: none;
       margin: 0px;
      }
      input[type="text"]{
-      width: 200px;
+      width: 60%;
      }
      .together div{
       padding: 8px 0px 8px 0px;
