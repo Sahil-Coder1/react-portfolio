@@ -173,6 +173,9 @@
   .prog-back{
     height: 20px;
   }
+  .desc{
+    padding: 0 18%;
+  }
   .services-div{
     align-items: center;
     padding: 8 0 8 0;
@@ -408,6 +411,7 @@ display: none;
       padding: 0px;
     }
     .div-img img{
+      padding: 16px 0;
       width: 60%;
       height: 60%;
     }
@@ -415,12 +419,18 @@ display: none;
       display: none;
      }
      .strip{
-      width: 140px;
-     height: 20px;
-      transform: translateX(85%) translateY(450%);
-     }
+      width: 20%;
+     height: 15px;
+      background-color: red;
+     align-self: center; 
+     transform: translateX(200%) translateY(730%);
+    }
      .div-name2{
+      text-align: center;
       padding: 16px;
+     }
+     .services-div p{
+      padding: 8px;
      }
      .services-div ul{
       display: grid;
@@ -446,13 +456,17 @@ display: none;
      }
      .pro-type ul{
       display:inline-block;
+      
+     }
+     .pro-type ul li{
+      margin: 4px 0;
      }
      .work{
       display: block;
      }
      .box-div{
-      width: 100%;
-      margin: 0px;
+      width: 95%;
+      margin: 8px;
      }
      input[type="text"]{
       width: 60%;
@@ -482,5 +496,9 @@ display: none;
     }
      .test{
       padding: 0px;
+      display: none;
+     }
+     .desc{
+      padding: 0 4%;
      }
     }

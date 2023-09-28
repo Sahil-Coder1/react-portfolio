@@ -76,7 +76,7 @@ function App() {
         </div>
         <div className="services-div">
             <h1>Services</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br/> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+            <p className='desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
             <ul type="none">
             <li>
                 <div className="round-box">
@@ -110,7 +110,7 @@ function App() {
         </div>
         <div className="my-projects">
         <h1>My Projects</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br/> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>        
+<p className='desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>        
         <div className="pro-type">
             <ul type="none">
             <li>All</li>
@@ -148,7 +148,7 @@ function App() {
         </div>
         <div className="test">
         <h1>Testimonials</h1><br/>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br/> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>        
+    <p className='desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>        
 <div className="test-divs">
             <div className="message">
             <div className="content-body2">
@@ -170,9 +170,10 @@ function App() {
             </div>
             </div>
     </div>
+    </div>
     <div className="together">
         <h1>Lets Design Together</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br/> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p> 
+            <p className='desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p> 
         <div>
             <input type="text"/><button>Contact Me</button>
             </div>
@@ -197,7 +198,6 @@ function App() {
             </div><br/>
             <div className="copyright">&copy; 2023 <span>Sahil Verma</span> All Right Reserved , Inc.</div>
         </div>
-  </div>
   </div>
   );
 }
