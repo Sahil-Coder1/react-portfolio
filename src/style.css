@@ -421,7 +421,6 @@ display: none;
      .strip{
       width: 20%;
      height: 15px;
-      background-color: red;
      align-self: center; 
      transform: translateX(200%) translateY(730%);
     }
