@@ -14,7 +14,7 @@ function App() {
     <div className='body'>
 <head>
     <title>Sahil Verma - Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href={style}/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -45,8 +45,11 @@ function App() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
             <button className="hire-btn">Hire Me</button>
             </div>
-            <div className="div-img"><div className='strip'></div>
+          
+            <div className="div-img"><div className='container-img'><div className='strip'></div></div>
+            
             <img src={profile} height="500"/><br/>
+               
                 <i className="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp; <i className="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;<i className="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;<i className="fa-brands fa-linkedin"></i>
             </div>
         </div>

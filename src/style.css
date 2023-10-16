@@ -120,9 +120,8 @@
   .strip{
     width: 200px;
     height: 40px;
-    background-color:var(--primary);
     opacity: 0.5;
-    transform: translateX(145px) translateY(210px);
+    background-color: red;
   }
   .div-name2{
     margin-top: 50px;
@@ -386,8 +385,9 @@ display: none;
     }
     .div-name{
       height: 100%;
-      width: 90%;
-      padding: 16px;
+      width: 85%;
+      padding:16px 16px 16px 25px;
+      
     }
     .div-name h1{
       margin-top: -10px;
@@ -404,25 +404,35 @@ display: none;
       word-spacing: 2px;
     }.hire-btn{
     margin-top: 25%;
+    margin-left:10px;
     }
     .div-img{
   
       width: 100%;
       padding: 0px;
     }
+    .container-img{
+      
+      transform: translateY(105px); 
+      
+     
+      justify-content: center;
+      display: flex;
+      justify-content: center;
+    }
     .div-img img{
-      padding: 16px 0;
-      width: 60%;
-      height: 60%;
+      padding: 0;
+    width: 250px;
+    height: 250px;
     }
     #sec-img{
       display: none;
      }
      .strip{
-      width: 20%;
-     height: 15px;
+      width: 100px;
+     height: 20px;
      align-self: center; 
-     transform: translateX(200%) translateY(730%);
+     background-color: var(--primary);
     }
      .div-name2{
       text-align: center;
