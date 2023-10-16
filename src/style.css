@@ -121,7 +121,8 @@
     width: 200px;
     height: 40px;
     opacity: 0.5;
-    background-color: red;
+    background-color:var(--primary);
+    transform:  translateX(145px) translateY(210px);
   }
   .div-name2{
     margin-top: 50px;
@@ -412,10 +413,7 @@ display: none;
       padding: 0px;
     }
     .container-img{
-      
       transform: translateY(105px); 
-      
-     
       justify-content: center;
       display: flex;
       justify-content: center;
@@ -433,6 +431,7 @@ display: none;
      height: 20px;
      align-self: center; 
      background-color: var(--primary);
+     transform:  translateX(0px) translateY(0px);
     }
      .div-name2{
       text-align: center;
