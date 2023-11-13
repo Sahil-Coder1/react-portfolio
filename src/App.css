@@ -96,13 +96,18 @@ margin-top: 100px;
 }
 .div-img{
   text-align: center;
-  }
+  transform: translateY(-40px);  
+}
 .div-img:hover{
   transform: scale(0.9);
   transition-duration: 0.2s;
 }
+.div-img i{
+  transform: translateY(-40px);
+}
 .div-name p{
   word-spacing: 4px;
+  font-size: 18px;
 }
 .hire-btn{
   height: 35px;
@@ -192,7 +197,7 @@ border-radius: 50px;
 }
 .round-box:hover{
   background-color: silver;
-  color: white;
+  color: var(--primary);
   transform: scale(0.9);
   transition-duration: 0.3s;
 }

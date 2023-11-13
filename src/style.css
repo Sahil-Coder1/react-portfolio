@@ -127,6 +127,11 @@
   .div-name2{
     margin-top: 50px;
   }
+  .div-name2 p{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: poppins;
+   }
   .experience-meter{
     font-size: 20px;
     font-weight: bold;
@@ -197,10 +202,10 @@
     padding: 35 16 20 16;
   }
   .round-box:hover{
-    background-color: silver;
-    color: white;
-    transform: scale(0.9);
-    transition-duration: 0.3s;
+    background-color: white;
+    color: var(--primary);
+  transform: scale(0.9);
+  transition-duration: 0.3s;
   }
   
   .round-box h2{

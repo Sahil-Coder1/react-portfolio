@@ -42,7 +42,7 @@ function App() {
             <h3>Hi I am</h3>
             <h2>Sahil Verma</h2>
             <h1>UI & UX <p>Designer</p></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+            <p>A passionate Full Stack Web & Android Developer 🚀 having an<br/> experience of building Web and Mobile applications with JavaScript / Reactjs / Java  and some other cool libraries and frameworks.</p>
             <button className="hire-btn">Hire Me</button>
             </div>
           
@@ -60,7 +60,10 @@ function App() {
              <div className="div-name2">
         
             <h1>About Me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p><br/>
+            <p>I fell in love with Programming and Designing because feels like haven<br/>I am fluent in classics like C , HTML , JavaScript , Java an React
+            <br/>My field of Interest's are building new Web & Android Design and Products  
+
+            </p><br/>
             <div className="experience-meter">
             UX<br/>
             <div className="prog-back"><div className="prog-parent"><div className="ux-div"></div><div className="prog-dot"></div></div></div>
@@ -70,7 +73,7 @@ function App() {
             App Design<br/>
               <div className="prog-back"><div className="prog-parent"><div className="app-div"></div><div className="prog-dot"></div>
 </div></div>
-            Graphic Design<br/>
+            Android Development<br/>
               <div className="prog-back"><div className="prog-parent"><div className="graphic-div"></div><div className="prog-dot"></div>
 </div></div>
                  
@@ -79,34 +82,34 @@ function App() {
         </div>
         <div className="services-div">
             <h1>Services</h1>
-            <p className='desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+            <p className='desc'>Make your business shine online with multiple services designed just for you<br/>Some of the services are below</p>
             <ul type="none">
             <li>
                 <div className="round-box">
                 <img src={ux}/> <br/>
                 <h2>UI/UX</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <p>I focus on creating a seamless and meaningful user experience by understanding user needs</p>
                 </div>
                     </li>
                 <li>
                 <div className="round-box">
                 <img src={web}/> <br/>
                 <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <p>Includes visual,UX,and technical aspects,arranging elements,choosing best colors, and images.</p>
                 </div>
                     </li>
                 <li>
                 <div className="round-box">
                 <img src={ui}/> <br/>
                 <h2>App Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <p>Creating the app's flow and structure,Making stylistic choices from colors to fonts, app security</p>
                 </div>
                     </li>
                 <li>
                 <div className="round-box">
                 <img src={graphic}/> <br/>
-                <h2>Graphic Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <h2>App Development</h2>
+                <p> The process of planning, designing, creating, testing, and deploying a software application</p>
                 </div>
                     </li>
             </ul>
