@@ -15,7 +15,7 @@ Because I have passion of web and android developmet , and I liked so much the d
 * Now clone this repository
 
   ```
-  git clone https://github.com/Sahil-Coder1/react-portafolio/
+  git clone https://github.com/Sahil-Coder1/react-portfolio/
   ```
 
 * Now run the project using
