@@ -21,6 +21,6 @@ Because I have passion of web and android developmet , and I liked so much the d
 * Now run the project using
 
 * ```
-  cd react-portafolio
+  cd react-portfolio
   npm start
   ```
