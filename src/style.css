@@ -344,8 +344,7 @@
   .nav{
      display: flex;
   justify-content: center;
-    vertical-align: middle;
-    
+    vertical-align: middle; 
   }
   .nav h2{
     padding-top: 10px;
