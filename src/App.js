@@ -4,11 +4,9 @@ import profile from './image/profile.png';
 import ui from'./image/ui-design.png';
 import web from'./image/web-design.png';
 import ux from'./image/ux-design.png';
-
 import './App.css';
 import './index.css';
 import style from './style.css';
-
 function App() {
   return (
     <div className='body'>
@@ -37,6 +35,7 @@ function App() {
                 </div>
             <button>Download CV</button>
         </div>
+        <div className='line'/>
         <div className="content-body">
         <div className="div-name">
             <h3>Hi I am</h3>
@@ -53,6 +52,7 @@ function App() {
                 <i className="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp; <i className="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;<i className="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;<i className="fa-brands fa-linkedin"></i>
             </div>
         </div>
+        
          <div className="content-body">
             <div className="div-img" id="sec-img"><div style={{width: "200px" ,height: "40px" ,backgroundColor:"var(--primary)",opacity: "0.5", transform: "translateX(145px) translateY(210px)"}}></div>
             <img src={profile} height="500"/><br/>
@@ -81,6 +81,7 @@ function App() {
             </div>
         </div>
         <div className="services-div">
+        <div className='line'></div>
             <h1>Services</h1>
             <p className='desc'>Make your business shine online with multiple services designed just for you<br/>Some of the services are below</p>
             <ul type="none">
@@ -153,6 +154,7 @@ function App() {
 
         </div>
         <div className="test">
+        <div className='line'></div>
         <h1>Testimonials</h1><br/>
     <p className='desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>        
 <div className="test-divs">
@@ -201,11 +203,10 @@ function App() {
             </ul></div>
             <div>
               <i className="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp; <i className="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;<i className="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;<i className="fa-brands fa-linkedin"></i>
-            </div><br/>
-            <div className="copyright">&copy; 2023 <span>Sahil Verma</span> All Right Reserved , Inc.</div>
+              </div><br/>
+           <p id="visits"></p> <div className="copyright">&copy; 2023 <span>Sahil Verma</span> All Right Reserved , Inc.</div>
         </div>
-  </div>
+     </div>
   );
 }
-
 export default App;
