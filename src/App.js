@@ -7,7 +7,70 @@ import ux from'./image/ux-design.png';
 import './App.css';
 import './index.css';
 import style from './style.css';
+import script from './script';
+import uxu from './image/uiux.png';
+import webdemo from './image/web-page1.png';
 function App() {
+
+    const show = () => {
+        alert("Hello");
+      };
+      const setVisible =(view)=>{
+       const box = document.getElementById(view).style.cssText=`
+       display:block;
+       `;
+      };
+      const showWeb = () =>{
+      removeAll();
+      setVisible("box4");
+      setVisible("box5");
+      setVisible("box6");
+       };
+      const showApp = () =>{
+      removeAll();
+      setVisible("box7");
+      setVisible("box8");
+      setVisible("box9");
+      };
+      const showGraphic = () =>{
+        removeAll();
+        setVisible("box10");
+      setVisible("box11");
+      setVisible("box12");
+      };
+
+      const uiux = () =>{
+        removeAll();
+        setVisible("box1");
+      setVisible("box2");
+      setVisible("box3");
+      };
+      const removeOne =(view)=>{
+        const box = document.getElementById(view).style.cssText=`
+        display:none;
+        `;
+       };
+      const removeAll = () =>{
+       removeOne("box1"); removeOne("box2");
+       removeOne("box3"); removeOne("box4");
+       removeOne("box5"); removeOne("box6");
+       removeOne("box7"); removeOne("box8");
+       removeOne("box9"); removeOne("box10");
+       removeOne("box11"); removeOne("box12");
+      };
+      const showOne =(view)=>{
+        const box = document.getElementById(view);
+        box.style.display='block';
+      };
+      const showAll = () =>{
+      showOne("box1");   showOne("box2");  
+      showOne("box3");   showOne("box4");  
+      showOne("box5");   showOne("box6");  
+      showOne("box7");   showOne("box8");  
+      showOne("box9");   showOne("box10");  
+      showOne("box11");  showOne("box12");  
+        
+      };
   return (
     <div className='body'>
 <head>
@@ -19,7 +82,7 @@ function App() {
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-    <div div="main">
+        <div div="main">
         <div className="header">
            <img src={logo} height="60"/> 
             <h2><span>S</span>ahil Verma</h2>
@@ -33,7 +96,7 @@ function App() {
                 <li>Contact</li>
             </ul>
                 </div>
-            <button>Download CV</button>
+            <button onClick={show}>Download CV</button>
         </div>
         <div className='line'/>
         <div className="content-body">
@@ -47,14 +110,14 @@ function App() {
           
             <div className="div-img"><div className='container-img'><div className='strip'></div></div>
             
-            <img src={profile} height="500"/><br/>
+            <img src={profile} /><br/>
                
                 <i className="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp; <i className="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;<i className="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;<i className="fa-brands fa-linkedin"></i>
             </div>
         </div>
         
          <div className="content-body">
-            <div className="div-img" id="sec-img"><div style={{width: "200px" ,height: "40px" ,backgroundColor:"var(--primary)",opacity: "0.5", transform: "translateX(145px) translateY(210px)"}}></div>
+            <div className="div-img" id="sec-img"><div style={{width: "200px" ,height: "40px" ,backgroundColor:"var(--primary)",opacity: "0.5", transform: "translateX(130px) translateY(210px)"}}></div>
             <img src={profile} height="500"/><br/>
             </div>
              <div className="div-name2">
@@ -120,38 +183,102 @@ function App() {
 <p className='desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>        
         <div className="pro-type">
             <ul type="none">
-            <li>All</li>
-            <li>UI/UX</li>
-            <li>Web Design</li>
-            <li>App Design</li>
-            <li>Graphic Design</li>
+            <li onClick={showAll}>All</li>
+            <li onClick={uiux}>UI/UX</li>
+            <li onClick={showWeb}>Web Design</li>
+            <li onClick={showApp}>App Design</li>
+            <li onClick={showGraphic}>Graphic Design</li>
             </ul>
             </div>
-            <div className="work">
-            <div className="box-div">
-                <div>
-            <div className="image-cls"></div>
-                <p>Web Design</p>
-                <h3>App Download Landing Page Design</h3>
-                    </div>         
-            </div>
-            <div className="box-div">
-                <div>
-            <div className="image-cls"></div>
-                <p>Web Design</p>
-                <h3>App Download Landing Page Design</h3>
-                    </div>         
-            </div>
-            <div className="box-div">
-                <div>
-            <div className="image-cls"></div>
-                <p>Web Design</p>
-                <h3>App Download Landing Page Design</h3>
-                    </div>         
-            </div>
             
+            <div className="work">
+            <div className="box-div" id='box1'>
+                <div>
+            <img src={uxu} className="image-cls"/>
+                <p>UI/UX</p>
+                <h3>App Download Landing Page Design</h3>
+                    </div>         
+            </div>
+            <div className="box-div" id='box2'>
+                <div>
+            <img src={uxu} className="image-cls"/>
+                <p>UI/UX</p>
+                <h3>App Download Landing Page Design</h3>
+                    </div>         
+            </div>
+            <div className="box-div" id='box3'>
+                <div>
+            <img src={uxu} className="image-cls"/>
+                <p>UI/UX</p>
+                <h3>App Download Landing Page Design</h3>
+                    </div>         
+            </div>
+            <div className="box-div" id='box4'>
+                <div>
+            <img src={webdemo} className="image-cls"/>
+                <p>Web Design</p>
+                <h3>App Download Landing Page Design</h3>
+                    </div>         
+            </div>
+            <div className="box-div" id='box5'>
+                <div>
+            <img src={webdemo} className="image-cls"/>
+                <p>Web Design</p>
+                <h3>App Download Landing Page Design</h3>
+                    </div>         
+            </div>
+            <div className="box-div" id='box6'>
+                <div>
+            <img src={webdemo} className="image-cls"/>
+                <p>Web Design</p>
+                <h3>App Download Landing Page Design</h3>
+                    </div>         
+            </div>
+            <div className="box-div" id='box7'>
+                <div>
+            <img src={uxu} className="image-cls"/>
+                <p>App Design</p>
+                <h3>App Download Landing Page Design</h3>
+                    </div>         
+            </div>
+            <div className="box-div" id='box8'>
+                <div>
+            <img src={uxu} className="image-cls"/>
+                <p>App Design</p>
+                <h3>App Download Landing Page Design</h3>
+                    </div>         
+            </div>
+            <div className="box-div" id='box9'>
+                <div>
+            <img src={uxu} className="image-cls"/>
+                <p>App Design</p>
+                <h3>App Download Landing Page Design</h3>
+                    </div>         
+            </div>
+            <div className="box-div" id='box10'>
+                <div>
+            <img src={uxu} className="image-cls"/>
+                <p>Graphic Design</p>
+                <h3>App Download Landing Page Design</h3>
+                    </div>         
+            </div>
+            <div className="box-div" id='box11'>
+                <div>
+            <img src={uxu} className="image-cls"/>
+                <p>Graphic Design</p>
+                <h3>App Download Landing Page Design</h3>
+                    </div>         
+            </div>
+            <div className="box-div" id='box12'>
+                <div>
+            <img src={uxu} className="image-cls"/>
+                <p>Graphic Design</p>
+                <h3>App Download Landing Page Design</h3>
+                    </div>         
             </div>
 
+            </div>
+          
         </div>
         <div className="test">
         <div className='line'></div>
@@ -206,6 +333,7 @@ function App() {
               </div><br/>
            <p id="visits"></p> <div className="copyright">&copy; 2023 <span>Sahil Verma</span> All Right Reserved , Inc.</div>
         </div>
+        <script src={script}></script>
      </div>
   );
 }

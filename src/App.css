@@ -120,12 +120,14 @@ margin-top: 100px;
   border: none;
   color: white;
   font-size: 16px;
+  
 }
 .hire-btn:hover{
    background-color: white;
 color: var(--primary);
   box-shadow: 0px 0px 8px 4px var(--primary);
 }
+
 .div-name2{
   margin-top: 50px;
 }

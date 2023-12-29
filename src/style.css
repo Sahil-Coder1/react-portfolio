@@ -109,10 +109,21 @@
   }
   .div-img{
     text-align: center;
+    margin-top: 3.5%;
+    height: 500px;
+    width: 40%;
+    padding-top: 0px;
+    }
+    .div-img img{
+      margin-top: 25%;
+    }
+    .div-img i{
+      margin-top: 40px;
     }
   .div-img:hover{
-    transform: scale(0.9);
-    transition-duration: 0.2s;
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
   }
   .div-name p{
     word-spacing: 4;
@@ -128,6 +139,7 @@
     border: none;
     color: white;
     font-size: 16px;
+    
   }
   .hire-btn:hover{
      background-color: white;
@@ -139,7 +151,7 @@
     height: 40px;
     opacity: 0.5;
     background-color:var(--primary);
-    transform:  translateX(145px) translateY(210px);
+    transform:  translateX(130px) translateY(170px);
   }
   .div-name2{
     margin-top: 50px;
@@ -148,6 +160,14 @@
     font-size: 18px;
     font-weight: 500;
     font-family: poppins;
+   }
+   .container-img{
+    height: 0px;
+   }
+   .div-img img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
    }
   .experience-meter{
     font-size: 20px;
@@ -236,6 +256,8 @@
     display: flex;
     text-align: center;
     padding: 0 0 32 0;
+    flex-wrap: wrap;
+    justify-content: center;  
   }
   .pro-type ul{
     padding: 32px;
@@ -268,8 +290,7 @@
   }
   .box-div{
     text-align: start;
-    
-    width: 40%;
+    width: 30%;
     height: auto;
     border-radius: 10px;
     margin: 8 16 8 16;
@@ -277,15 +298,17 @@
   }
   .image-cls{
    margin-bottom: 4px;
-    height: 400px;
-    width: auto;
+    height: 200px;
+    width: 100%;
     background-image: url(image/web-page1.png);
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center ;
   }
   .image-cls:hover{
-    box-shadow: 0 0 16px 8px var(--primary);
-    transform: scale(0.9);
+    box-shadow: 0 0 16px 800px #ffffffe7;
+    transform: scale(1.5);    
   }
   .box-div p{
     color: var(--primary);
@@ -414,7 +437,7 @@ display: none;
     .div-name{
       height: 100%;
       width: 85%;
-      padding:16px 16px 16px 25px;
+      padding:16px 16px 16px 16px;
       
     }
     .div-name h1{
@@ -435,28 +458,28 @@ display: none;
     margin-left:10px;
     }
     .div-img{
-  
       width: 100%;
-      padding: 0px;
+      height: auto;
     }
     .container-img{
       transform: translateY(105px); 
       justify-content: center;
       display: flex;
       justify-content: center;
-    }
+       }
     .div-img img{
       padding: 0;
     width: 250px;
     height: 250px;
     }
     .div-img i{
-      margin-top: 20px;
+      margin-top: 40px;
     }
     #sec-img{
       display: none;
      }
      .strip{
+      display: none;
       width: 100px;
      height: 20px;
      align-self: center; 
