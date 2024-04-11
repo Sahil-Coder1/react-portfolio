@@ -10,18 +10,22 @@ import style from './style.css';
 import script from './script';
 import uxu from './image/uiux.png';
 import webdemo from './image/web-page1.png';
+import React , { useEffect } from 'react';
+
 function App() {
 
+    useEffect(() => {
+    showWeb();
+    }, []);
+
     const show = () => {
-        alert("Hello");
+     alert("Will Update Later");
       };
       const setVisible =(view)=>{
-       const box = document.getElementById(view).style.cssText=`
-       display:block;
-       `;
+       document.getElementById(view).style.cssText=`display:block;`;
       };
       const showWeb = () =>{
-      removeAll();
+      removeAll(); 
       setVisible("box4");
       setVisible("box5");
       setVisible("box6");
@@ -45,8 +49,9 @@ function App() {
       setVisible("box2");
       setVisible("box3");
       };
+
       const removeOne =(view)=>{
-        const box = document.getElementById(view).style.cssText=`
+        document.getElementById(view).style.cssText=`
         display:none;
         `;
        };
@@ -71,6 +76,11 @@ function App() {
       showOne("box11");  showOne("box12");  
         
       };
+      const contactMe = ()=>{
+         window.open('mailto:26maysahil@gmail.com&subject=Lets Collabe&body='+document.getElementById("desText").value);
+         document.getElementById("desText").value = "";
+    };
+    
   return (
     <div className='body'>
 <head>
@@ -84,7 +94,7 @@ function App() {
     </head>
         <div div="main">
         <div className="header">
-           <img src={logo} height="60"/> 
+           <img  src={logo} height="60" alt='logo'/> 
             <h2><span>S</span>ahil Verma</h2>
             <div className="menu-container">
             <ul type="none">
@@ -110,7 +120,7 @@ function App() {
           
             <div className="div-img"><div className='container-img'><div className='strip'></div></div>
             
-            <img src={profile} /><br/>
+            <img alt='logo' src={profile} /><br/>
                
                 <i className="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp; <i className="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;<i className="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;<i className="fa-brands fa-linkedin"></i>
             </div>
@@ -118,7 +128,7 @@ function App() {
         
          <div className="content-body">
             <div className="div-img" id="sec-img"><div style={{width: "200px" ,height: "40px" ,backgroundColor:"var(--primary)",opacity: "0.5", transform: "translateX(130px) translateY(210px)"}}></div>
-            <img src={profile} height="500"/><br/>
+            <img alt='logo' src={profile} height="500"/><br/>
             </div>
              <div className="div-name2">
         
@@ -150,37 +160,37 @@ function App() {
             <ul type="none">
             <li>
                 <div className="round-box">
-                <img src={ux}/> <br/>
+                <img alt='logo' src={ux}/> <br/>
                 <h2>UI/UX</h2>
                 <p>I focus on creating a seamless and meaningful user experience by understanding user needs</p>
                 </div>
                     </li>
                 <li>
                 <div className="round-box">
-                <img src={web}/> <br/>
+                <img alt='logo' src={web}/> <br/>
                 <h2>Web Design</h2>
                 <p>Includes visual,UX,and technical aspects,arranging elements,choosing best colors, and images.</p>
                 </div>
                     </li>
                 <li>
                 <div className="round-box">
-                <img src={ui}/> <br/>
+                <img alt='logo' src={ui}/> <br/>
                 <h2>App Design</h2>
                 <p>Creating the app's flow and structure,Making stylistic choices from colors to fonts, app security</p>
                 </div>
                     </li>
                 <li>
                 <div className="round-box">
-                <img src={graphic}/> <br/>
+                <img alt='logo' src={graphic}/> <br/>
                 <h2>App Development</h2>
                 <p> The process of planning, designing, creating, testing, and deploying a software application</p>
                 </div>
-                    </li>
+                 </li>
             </ul>
         </div>
         <div className="my-projects">
         <h1>My Projects</h1>
-<p className='desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>        
+<p className='desc'>Here are several projects that I have worked on and would like to showcase.</p>        
         <div className="pro-type">
             <ul type="none">
             <li onClick={showAll}>All</li>
@@ -194,84 +204,84 @@ function App() {
             <div className="work">
             <div className="box-div" id='box1'>
                 <div>
-            <img src={uxu} className="image-cls"/>
+            <img alt='logo' src={uxu} className="image-cls"/>
                 <p>UI/UX</p>
                 <h3>App Download Landing Page Design</h3>
                     </div>         
             </div>
             <div className="box-div" id='box2'>
                 <div>
-            <img src={uxu} className="image-cls"/>
+            <img alt='logo' src={uxu} className="image-cls"/>
                 <p>UI/UX</p>
                 <h3>App Download Landing Page Design</h3>
                     </div>         
             </div>
             <div className="box-div" id='box3'>
                 <div>
-            <img src={uxu} className="image-cls"/>
+            <img alt='logo' src={uxu} className="image-cls"/>
                 <p>UI/UX</p>
                 <h3>App Download Landing Page Design</h3>
                     </div>         
             </div>
             <div className="box-div" id='box4'>
                 <div>
-            <img src={webdemo} className="image-cls"/>
+            <img alt='logo' src={webdemo} className="image-cls"/>
                 <p>Web Design</p>
                 <h3>App Download Landing Page Design</h3>
                     </div>         
             </div>
             <div className="box-div" id='box5'>
                 <div>
-            <img src={webdemo} className="image-cls"/>
+            <img alt='logo' src={webdemo} className="image-cls"/>
                 <p>Web Design</p>
                 <h3>App Download Landing Page Design</h3>
                     </div>         
             </div>
             <div className="box-div" id='box6'>
                 <div>
-            <img src={webdemo} className="image-cls"/>
+            <img alt='logo' src={webdemo} className="image-cls"/>
                 <p>Web Design</p>
                 <h3>App Download Landing Page Design</h3>
                     </div>         
             </div>
             <div className="box-div" id='box7'>
                 <div>
-            <img src={uxu} className="image-cls"/>
+            <img alt='logo' src={uxu} className="image-cls"/>
                 <p>App Design</p>
                 <h3>App Download Landing Page Design</h3>
                     </div>         
             </div>
             <div className="box-div" id='box8'>
                 <div>
-            <img src={uxu} className="image-cls"/>
+            <img alt='logo' src={uxu} className="image-cls"/>
                 <p>App Design</p>
                 <h3>App Download Landing Page Design</h3>
                     </div>         
             </div>
             <div className="box-div" id='box9'>
                 <div>
-            <img src={uxu} className="image-cls"/>
+            <img alt='logo' src={uxu} className="image-cls"/>
                 <p>App Design</p>
                 <h3>App Download Landing Page Design</h3>
                     </div>         
             </div>
             <div className="box-div" id='box10'>
                 <div>
-            <img src={uxu} className="image-cls"/>
+            <img alt='logo' src={uxu} className="image-cls"/>
                 <p>Graphic Design</p>
                 <h3>App Download Landing Page Design</h3>
                     </div>         
             </div>
             <div className="box-div" id='box11'>
                 <div>
-            <img src={uxu} className="image-cls"/>
+            <img alt='logo' src={uxu} className="image-cls"/>
                 <p>Graphic Design</p>
                 <h3>App Download Landing Page Design</h3>
                     </div>         
             </div>
             <div className="box-div" id='box12'>
                 <div>
-            <img src={uxu} className="image-cls"/>
+            <img alt='logo' src={uxu} className="image-cls"/>
                 <p>Graphic Design</p>
                 <h3>App Download Landing Page Design</h3>
                     </div>         
@@ -282,25 +292,25 @@ function App() {
         </div>
         <div className="test">
         <div className='line'></div>
-        <h1>Testimonials</h1><br/>
-    <p className='desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>        
+        <h1>Testimonials</h1>
+    <p className='desc'>Below are a selection of clients I've had the pleasure of working with, accompanied by testimonials from a few of them.</p>        
 <div className="test-divs">
             <div className="message">
             <div className="content-body2">
-     <img src={profile} height="200"/>
+     <img alt='logo' src={profile} height="200"/>
                  <div><p><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<span>"</span><br/><span className="bl">Rakesh Patel</span><br/> CEO</p>
     </div>
             </div>  </div>
             <div className="message">
             <div className="content-body2">
-     <img src={profile} height="200"/>
+     <img alt='logo' src={profile} height="200"/>
                  <div><p><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<span>"</span><br/><span className="bl">Rakesh Patel</span><br/> CEO</p>
     </div>
             </div></div>
             <div className="message">
             <div className="content-body2">
-     <img src={profile} height="200"/>
-                 <div><p><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<span>"</span><br/><span className="bl">Rakesh Patel</span><br/> CEO</p>
+     <img alt='logo' src={profile} height="200"/>
+                 <div><p><span>"</span>I was impressed with Sahil's ability to understand my needs and translate them into a beautiful and functional website. He was always available to answer my questions and make changes, and I am very happy with the final product. I would highly recommend Sahil to anyone looking for a web developer<span>"</span><br/><span className="bl">Rakesh Patel</span><br/> CEO</p>
       </div>
             </div>
             </div>
@@ -308,15 +318,15 @@ function App() {
     </div>
     <div className="together">
         <h1>Lets Design Together</h1>
-            <p className='desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p> 
+            <p className='desc'>Do you have a vision for a stunning website or app, but aren't sure how to bring it to life? Let's collaborate! I thrive on working closely with clients to translate their ideas into beautiful, user-friendly designs. We'll brainstorm together, explore different concepts, and refine everything until we create something truly remarkable.</p> 
         <div>
-            <input type="text"/><button>Contact Me</button>
+            <input id='desText' type="text" placeholder='Your Idea'/><button onClick={contactMe}>Contact Me</button>
             </div>
         </div>
     </div>
     <div className="bottom-nav">
             <div style={{height:"50px"}}></div>
-         <div className="nav"><img src={logo} height="60"/> 
+         <div className="nav"><img alt='logo' src={logo} height="60"/> 
         <h2>Sahil Verma</h2>
         </div>
         <div className="navigator">

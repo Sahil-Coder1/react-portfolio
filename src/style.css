@@ -7,7 +7,7 @@
     transition: all .5s ease-in-out;
   }
   body{
-  margin:0 100 0 100;
+  margin:0;
     background-color: white;
   
   }
@@ -562,4 +562,30 @@ display: none;
      .desc{
       padding: 0 4%;
      }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+   .header ul{
+    display: none;
+   }
+   .div-name h2{
+  font-size: 25px;
+   }
+   .div-name h1{
+    font-size: 45px;
+   }
+  .div-name h1 p{
+    font-size: 45px;
+  }
+  .div-name p{
+    font-size: medium;
+  }
+  .div-img img{
+    height: 200px;
+    width: 200px;
+  }
+    }
+    @media (min-width: 1367px) {
+      .body{
+        background-color: rebeccapurple;
+      }
     }
