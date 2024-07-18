@@ -11,16 +11,17 @@ import script from './script';
 import uxu from './image/uiux.png';
 import webdemo from './image/web-page1.png';
 import React , { useEffect } from 'react';
+import cv from './resume/CV(Sahil Verma).pdf';
+import backtoTop from './image/backtoTop.png';
 
 function App() {
 
     useEffect(() => {
     showWeb();
     }, []);
-
-    const show = () => {
-     alert("Will Update Later");
-      };
+    
+    const linkedin = "https://www.linkedin.com/in/sahil-verma1";
+    
       const setVisible =(view)=>{
        document.getElementById(view).style.cssText=`display:block;`;
       };
@@ -81,6 +82,17 @@ function App() {
          document.getElementById("desText").value = "";
     };
     
+    window.onscroll = () => {
+        pageScroll();
+    }
+    const pageScroll = () => {
+      if(document.documentElement.scrollTop > 500){
+        document.getElementById("float").style.display="block";
+      }else{
+        document.getElementById("float").style.display="none";
+      }
+    }
+
   return (
     <div className='body'>
 <head>
@@ -98,15 +110,15 @@ function App() {
             <h2><span>S</span>ahil Verma</h2>
             <div className="menu-container">
             <ul type="none">
-            <li>Home</li>
-            <li>About Me</li>       
-             <li>Services</li>
-                <li>Projects</li>
-                <li>Testimonials</li>
-                <li>Contact</li>
+            <a href='.'><li>Home</li></a>       
+            <a href='#content-body'><li>About Me</li></a>    
+             <a href='#services-div'><li>Services</li></a>
+             <a href='#my-projects'><li>Projects</li></a>
+             <a href='#test'><li>Testimonials</li></a>
+             <a href='#together'><li>Contact</li></a>
             </ul>
                 </div>
-            <button onClick={show}>Download CV</button>
+          <a href={cv} download='Sahil Verma.pdf'>  <button>Download CV</button></a>
         </div>
         <div className='line'/>
         <div className="content-body">
@@ -115,18 +127,18 @@ function App() {
             <h2>Sahil Verma</h2>
             <h1>UI & UX <p>Designer</p></h1>
             <p>A passionate Full Stack Web & Android Developer 🚀 having an<br/> experience of building Web and Mobile applications with JavaScript / Reactjs / Java  and some other cool libraries and frameworks.</p>
-            <button className="hire-btn">Hire Me</button>
+            <button className="hire-btn" onClick={contactMe}>Hire Me</button>
             </div>
           
             <div className="div-img"><div className='container-img'><div className='strip'></div></div>
             
             <img alt='logo' src={profile} /><br/>
                
-                <i className="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp; <i className="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;<i className="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;<i className="fa-brands fa-linkedin"></i>
+               <a href='https://www.facebook.com/profile.php?id=100028138461886'> <i className="fa-brands fa-facebook"></i></a>&nbsp;&nbsp;&nbsp; <i className="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;<i className="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;<a href={linkedin}><i className="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
         
-         <div className="content-body">
+         <div className="content-body" id='content-body'>
             <div className="div-img" id="sec-img"><div style={{width: "200px" ,height: "40px" ,backgroundColor:"var(--primary)",opacity: "0.5", transform: "translateX(130px) translateY(210px)"}}></div>
             <img alt='logo' src={profile} height="500"/><br/>
             </div>
@@ -153,7 +165,7 @@ function App() {
                  </div>
             </div>
         </div>
-        <div className="services-div">
+        <div className="services-div" id="services-div">
         <div className='line'></div>
             <h1>Services</h1>
             <p className='desc'>Make your business shine online with multiple services designed just for you<br/>Some of the services are below</p>
@@ -188,7 +200,7 @@ function App() {
                  </li>
             </ul>
         </div>
-        <div className="my-projects">
+        <div className="my-projects" id='my-projects'>
         <h1>My Projects</h1>
 <p className='desc'>Here are several projects that I have worked on and would like to showcase.</p>        
         <div className="pro-type">
@@ -290,7 +302,7 @@ function App() {
             </div>
           
         </div>
-        <div className="test">
+        <div className="test" id='test'>
         <div className='line'></div>
         <h1>Testimonials</h1>
     <p className='desc'>Below are a selection of clients I've had the pleasure of working with, accompanied by testimonials from a few of them.</p>        
@@ -316,7 +328,7 @@ function App() {
             </div>
     </div>
     </div>
-    <div className="together">
+    <div className="together" id='together'>
         <h1>Lets Design Together</h1>
             <p className='desc'>Do you have a vision for a stunning website or app, but aren't sure how to bring it to life? Let's collaborate! I thrive on working closely with clients to translate their ideas into beautiful, user-friendly designs. We'll brainstorm together, explore different concepts, and refine everything until we create something truly remarkable.</p> 
         <div>
@@ -344,7 +356,10 @@ function App() {
            <p id="visits"></p> <div className="copyright">&copy; 2023 <span>Sahil Verma</span> All Right Reserved , Inc.</div>
         </div>
         <script src={script}></script>
+        <div className='float' id='float'><a href='#top'><img src={backtoTop}/></a></div>
+      
      </div>
+     
   );
 }
 export default App;
