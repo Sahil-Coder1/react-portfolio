@@ -13,6 +13,7 @@ import webdemo from './image/web-page1.png';
 import React , { useEffect } from 'react';
 import cv from './resume/CV(Sahil Verma).pdf';
 import backtoTop from './image/backtoTop.png';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
 
@@ -105,6 +106,7 @@ function App() {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
         <div div="main">
+        <SpeedInsights />
         <div className="header">
            <img  src={logo} height="60" alt='logo'/> 
             <h2><span>S</span>ahil Verma</h2>
