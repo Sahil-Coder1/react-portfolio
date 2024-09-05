@@ -1,28 +1,35 @@
-const About = () =>{
-    return(
-        <div className="div-name2">
+import profile from '../image/profile.png';
 
-        <h1>About Me</h1>
-        <p>I fell in love with Programming and Designing because feels like haven<br />I am fluent in classics like C , HTML , JavaScript , Java an React
-            <br />My field of Interest's are building new Web & Android Design and Products
+const About = () => {
+    return (<div >
+        <div className="content-body" id='content-body' >
+            <div className="div-img" id="sec-img"><div style={{ width: "200px", height: "40px", backgroundColor: "var(--primary)", opacity: "0.5", transform: "translateX(130px) translateY(210px)" }}></div>
+                <img alt='logo' src={profile} height="500" /><br />
+            </div>
+            <div className="div-name2" >
 
-        </p><br />
-        <div className="experience-meter">
-            UX<br />
-            <div className="prog-back"><div className="prog-parent"><div className="ux-div"></div><div className="prog-dot"></div></div></div>
-            Website Design<br />
-            <div className="prog-back"><div className="prog-parent"><div className="web-div"></div><div className="prog-dot"></div>
-            </div></div>
-            App Design<br />
-            <div className="prog-back"><div className="prog-parent"><div className="app-div"></div><div className="prog-dot"></div>
-            </div></div>
-            Android Development<br />
-            <div className="prog-back"><div className="prog-parent"><div className="graphic-div"></div><div className="prog-dot"></div>
-            </div></div>
+                <h1>About Me</h1>
+                <p>I fell in love with Programming and Designing because feels like haven<br />I am fluent in classics like C , HTML , JavaScript , Java an React
+                    <br />My field of Interest's are building new Web & Android Design and Products
 
+                </p><br />
+                <div className="experience-meter">
+                    UX<br />
+                    <div className="prog-back"><div className="prog-parent"><div className="ux-div"></div><div className="prog-dot"></div></div></div>
+                    Website Design<br />
+                    <div className="prog-back"><div className="prog-parent"><div className="web-div"></div><div className="prog-dot"></div>
+                    </div></div>
+                    App Design<br />
+                    <div className="prog-back"><div className="prog-parent"><div className="app-div"></div><div className="prog-dot"></div>
+                    </div></div>
+                    Android Development<br />
+                    <div className="prog-back"><div className="prog-parent"><div className="graphic-div"></div><div className="prog-dot"></div>
+                    </div></div>
+
+                </div>
+            </div>
         </div>
-    </div>
-    )
+    </div>)
 }
 
 export default About;

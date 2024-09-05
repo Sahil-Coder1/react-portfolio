@@ -26,6 +26,11 @@ function App() {
             document.getElementById("float").style.display = "none";
         }
     }
+    const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+});
    
     return (
         <div className='body'>
@@ -48,6 +53,7 @@ function App() {
                <Together/>
            <Footer/>
             <script src={script}></script>
+            <div className='cursor'/>
             <div className='float' id='float'><a href='#top'><img src={backtoTop} /></a></div>
 
         </div>

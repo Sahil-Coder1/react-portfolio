@@ -121,8 +121,8 @@ i {
 }
 
 .float {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   position: fixed;
   right: 40px;
   bottom: 50px;
@@ -134,8 +134,9 @@ i {
 
 .float img {
 
-  height: 50px;
+  height: 32px;
   filter: invert(1);
+  padding: 4px;
 }
 
 .div-name h1 p {
