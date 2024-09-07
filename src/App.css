@@ -5,8 +5,23 @@
 * {
   margin: 0px;
   font-family: poppins;
-  transition: all .5s ease-in-out;
+  transition: all .8s ease-in-out;
   scroll-behavior: smooth;
+  animation: reaveal 0.9s linear ;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10%;
+}
+
+@keyframes reaveal{
+  0%{
+opacity: 0%;
+transform: translateX(-200px);
+  }
+  100%{
+opacity: 100%;
+transform: translateX(0px);
+transition: all 0.8s ease-in;
+  }
 }
 
 .body {

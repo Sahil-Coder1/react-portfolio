@@ -3,7 +3,7 @@ import profile from '../image/profile.png';
 const About = () => {
     return (<div >
         <div className="content-body" id='content-body' >
-            <div className="div-img" id="sec-img"><div style={{ width: "200px", height: "40px", backgroundColor: "var(--primary)", opacity: "0.5", transform: "translateX(130px) translateY(210px)" }}></div>
+            <div className="div-img" id="sec-img"><div className='stripe2'/>
                 <img alt='logo' src={profile} height="500" /><br />
             </div>
             <div className="div-name2" >
