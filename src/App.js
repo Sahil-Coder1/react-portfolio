@@ -26,15 +26,17 @@ function App() {
             document.getElementById("float").style.display = "none";
         }
     }
-    const cursor = document.querySelector('.cursor');
+    useEffect(()=> {
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', e => {
+            cursor.style.top = (e.pageY - 10) + "px";
+            cursor.style.left = (e.pageX - 10) + "px";
+        });
+    },[]);
 
-document.addEventListener('mousemove', e => {
-    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-});
-   
     return (
         <div className='body'>
-             <head>
+            <head>
                 <title>Sahil Verma - Portfolio</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="stylesheet" href={style} />
@@ -43,17 +45,18 @@ document.addEventListener('mousemove', e => {
                 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
             </head>
-             <Header/>
+            <Header />
             <SpeedInsights />
-            <Main/>
-            <About/>
-                <Services/>
-               <Myprojects/>
-               <Testimonial/>
-               <Together/>
-           <Footer/>
+            <Main />
+            <About />
+            <Services />
+            <Myprojects />
+            <Testimonial />
+            <Together />
+            <Footer />
             <script src={script}></script>
-            <div className='cursor'/>
+            <div className='cursor' />
+
             <div className='float' id='float'><a href='#top'><img src={backtoTop} /></a></div>
 
         </div>
