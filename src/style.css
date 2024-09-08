@@ -6,9 +6,7 @@
   font-family: poppins;
   transition: all .8s ease-in-out;
   scroll-behavior: smooth;
-  animation: reaveal 0.9s linear ;
-  animation-timeline: view();
-  animation-range: entry 0% cover 10%;
+  
 }
 
 @keyframes reaveal{
@@ -25,7 +23,9 @@ transition: all 0.8s ease-in;
   body{
   margin:0;
     background-color: white;
-  
+    animation: reaveal 0.9s linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
   }
   ::-webkit-scrollbar{
     width: 10px;

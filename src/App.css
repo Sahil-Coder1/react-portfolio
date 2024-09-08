@@ -7,12 +7,10 @@
   font-family: poppins;
   transition: all .8s ease-in-out;
   scroll-behavior: smooth;
-  animation: reaveal 0.9s linear ;
-  animation-timeline: view();
-  animation-range: entry 0% cover 10%;
+ 
 }
 
-@keyframes reaveal{
+@keyframes reavealRight{
   0%{
 opacity: 0%;
 transform: translateX(-200px);
@@ -20,14 +18,24 @@ transform: translateX(-200px);
   100%{
 opacity: 100%;
 transform: translateX(0px);
-transition: all 0.8s ease-in;
+  }
+}
+
+@keyframes reavealLeft{
+  0%{
+opacity: 0%;
+transform: translateX(200px);
+  }
+  100%{
+opacity: 100%;
+transform: translateX(0px);
   }
 }
 
 .body {
   margin: 0 100px;
   background-color: white;
-
+ 
 }
 
 .header {
@@ -70,6 +78,7 @@ transition: all 0.8s ease-in;
   background-color: white;
   margin: 16px 10px 20px 10px;
   padding: 6px;
+  
 }
 
 .header ul a {
@@ -109,15 +118,18 @@ transition: all 0.8s ease-in;
 
 .content-body {
   display: flex;
+
 }
 
 #desText {
   padding-left: 16px;
+  
 }
 
 .div-name {
   margin-top: 100px;
   width: 60%;
+  
 }
 
 .div-name h2 {
@@ -152,17 +164,20 @@ i {
   height: 32px;
   filter: invert(1);
   padding: 4px;
+
 }
 
 .div-name h1 p {
   margin-top: -25px;
   margin-left: 150px;
   font-size: 70px;
+  
 }
 
 .div-img {
   text-align: center;
   transform: translateY(-40px);
+  
 }
 
 .div-img:hover {
@@ -191,6 +206,7 @@ i {
   color: white;
   font-size: 16px;
   cursor: pointer;
+  
 }
 
 .hire-btn:hover {
@@ -201,11 +217,17 @@ i {
 
 .div-name2 {
   margin-top: 50px;
+  animation: reavealRight 1s linear ;
+  animation-timeline: view();
+  animation-range: entry 0;
 }
 
 .experience-meter {
   font-size: 20px;
   font-weight: bold;
+  animation: reavealRight 1s linear ;
+  animation-timeline: view();
+  animation-range: entry 0;
 }
 
 .prog-parent {
@@ -214,6 +236,8 @@ i {
   border-radius: 50px;
   margin: 16px 0 16px 0;
   display: flex;
+  
+  
 }
 
 .ux-div {
@@ -262,6 +286,9 @@ i {
   padding: 8px 0 8px 0;
   width: 100%;
   text-align: center;
+  /* animation: reavealLeft 1s linear ;
+  animation-timeline: view();
+  animation-range: entry 0; */
 }
 
 .services-div ul {
@@ -278,6 +305,9 @@ i {
   background-color: #f5f5f5;
   text-align: start;
   padding: 35px 16px 20px 16px;
+  animation: reavealLeft 1s linear ;
+  animation-timeline: view();
+  animation-range: entry 0;
 }
 
 .round-box:hover {
@@ -289,23 +319,27 @@ i {
 
 .round-box h2 {
   margin-top: 8px;
+  
 }
 
 .my-projects {
   padding-top: 10px;
   text-align: center;
+  
 }
 
 .work {
   display: flex;
   text-align: center;
   padding: 0 0 32px 0;
+  
 }
 
 .pro-type ul {
   padding: 32px;
   display: flex;
   justify-content: center;
+  
 }
 
 .pro-type ul li {
@@ -344,7 +378,9 @@ i:hover {
   height: auto;
   border-radius: 10px;
   margin: 8px 16px 8px 16px;
-
+  animation: reavealRight 1s linear ;
+  animation-timeline: view();
+  animation-range: entry 0;
 }
 
 .image-cls {
@@ -369,6 +405,7 @@ i:hover {
   text-align: center;
   width: 100%;
   padding: 0 0 32px 0;
+ 
 }
 
 .message {
@@ -376,6 +413,7 @@ i:hover {
   width: 95%;
   margin: 20px 0 20px 0;
   transform: translateX(-5%);
+  
 }
 
 .content-body2:hover {
@@ -434,6 +472,9 @@ i:hover {
 }
 
 .test-divs {
+  animation: reavealLeft 1s linear ;
+  animation-timeline: view();
+  animation-range: entry 0;
   width: 150px;
   display: flex;
 }
@@ -441,6 +482,9 @@ i:hover {
 .together {
   padding: 32px 0;
   text-align: center;
+  animation: reavealRight 1s linear ;
+  animation-timeline: view();
+  animation-range: entry 0;
 }
 
 .together div {
