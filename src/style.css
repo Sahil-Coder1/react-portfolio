@@ -402,8 +402,8 @@ i:hover {
 }
 
 .image-cls:hover {
-  box-shadow: 0 0 16px 800px #ffffffe7;
-  transform: scale(1.5);
+  box-shadow: 0 0 16px 8px #ffffffe7;
+  transform: scale(1.1);
 }
 
 .box-div p {

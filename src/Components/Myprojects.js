@@ -1,8 +1,10 @@
 import React from "react";
 import  {useEffect} from "react";
-import webdemo from '../image/web-page1.png';
+import ai from '../image/ai-content.png';
 import uxu from '../image/uiux.png';
-
+import shortner from '../image/url-shortner.png';
+import weather from '../image/weather.png';
+import pass from '../image/passgen.png';
 
 const Myprojects = () => {
 
@@ -15,6 +17,7 @@ const Myprojects = () => {
         setVisible("box4");
         setVisible("box5");
         setVisible("box6");
+        setVisible("box13");
     };
     const showApp = () => {
         removeAll();
@@ -100,25 +103,32 @@ const Myprojects = () => {
                                 <h3>App Download Landing Page Design</h3>
                             </div>
                         </div>
-                        <div className="box-div" id='box4'>
-                            <div>
-                                <img alt='logo' src={webdemo} className="image-cls" />
-                                <p>Web Design</p>
-                                <h3>App Download Landing Page Design</h3>
-                            </div>
-                        </div>
                         <div className="box-div" id='box5'>
                             <div>
-                                <img alt='logo' src={webdemo} className="image-cls" />
+                                <img alt='logo' src={weather} className="image-cls" />
                                 <p>Web Design</p>
-                                <h3>App Download Landing Page Design</h3>
+                                <h3>Weather-react-app</h3>
                             </div>
                         </div>
                         <div className="box-div" id='box6'>
                             <div>
-                                <img alt='logo' src={webdemo} className="image-cls" />
+                                <img alt='logo' src={shortner} className="image-cls" />
                                 <p>Web Design</p>
-                                <h3>App Download Landing Page Design</h3>
+                                <h3>Url Shortner</h3>
+                            </div>
+                        </div>
+                        <div className="box-div" id='box4'>
+                            <div>
+                                <img alt='logo' src={ai} className="image-cls" />
+                                <p>Web Design</p>
+                                <h3>AI-Content-Detector</h3>
+                            </div>
+                        </div>
+                        <div className="box-div" id='box13'>
+                            <div>
+                                <img alt='logo' src={pass} className="image-cls" />
+                                <p>Web Design</p>
+                                <h3>Password Generator</h3>
                             </div>
                         </div>
                         <div className="box-div" id='box7'>
