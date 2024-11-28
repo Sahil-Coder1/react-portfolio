@@ -54,6 +54,7 @@ const Myprojects = () => {
         removeOne("box7"); removeOne("box8");
         removeOne("box9"); removeOne("box10");
         removeOne("box11"); removeOne("box12");
+        removeOne("box13");
     };
     const showOne = (view) => {
         const box = document.getElementById(view);
@@ -66,6 +67,7 @@ const Myprojects = () => {
         showOne("box7"); showOne("box8");
         showOne("box9"); showOne("box10");
         showOne("box11"); showOne("box12");
+        showOne("box13");
     }
 
     return(
