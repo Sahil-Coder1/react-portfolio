@@ -28,7 +28,7 @@ const Main = () => {
 
                     <img alt='logo' src={profile} /><br />
 
-                    <a href={data.facebook}> <i className="fa-brands fa-facebook"></i></a>&nbsp;&nbsp;&nbsp; <i className="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;<a href={data.github}><i className="fa-brands fa-github"></i></a>&nbsp;&nbsp;&nbsp;<a href={data.linkedin}><i className="fa-brands fa-linkedin"></i></a>
+                    <a href={data.facebook}> <i className="fa-brands fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;<a href={data.github}><i className="fa-brands fa-github"></i></a>&nbsp;&nbsp;&nbsp;<a href={data.linkedin}><i className="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
 
