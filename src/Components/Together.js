@@ -1,9 +1,9 @@
 const Together = () => {
   const contactMe = () => {
     window.open(
-      "mailto:26maysahil@gmail.com&subject=Lets Collabe&body=" +
-        document.getElementById("desText").value
-    );
+        "mailto:26maysahil@gmail.com?subject=Let's%20Collabe&body=" +
+        encodeURIComponent(document.getElementById("desText").value)
+      );
     document.getElementById("desText").value = "";
   };
   return (
