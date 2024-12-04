@@ -16,7 +16,7 @@ const Header = () => {
                     <a href='#together'><li>Contact</li></a>
                 </ul>
             </div>
-            <a href={cv} download='Sahil Verma.pdf'>  <button>Download CV</button></a>
+            <a href={cv} target='blank' download='Sahil Verma.pdf'>  <button>Download CV</button></a>
         </div>
 
     )
