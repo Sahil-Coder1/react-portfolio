@@ -135,6 +135,7 @@ body {
 
 .content-body {
   display: flex;
+  animation: reavealLeft 1s linear;
 
 }
 
@@ -166,6 +167,8 @@ body {
   height: 500px;
   width: 40%;
   padding-top: 0px;
+  animation: reavealRight 1s linear;
+
 }
 
 .div-img img {
