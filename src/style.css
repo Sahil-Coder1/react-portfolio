@@ -58,6 +58,8 @@ body {
 .header {
   height: auto;
   display: flex;
+  animation: reavealRight 1s linear;
+  
 }
 
 .header img {
