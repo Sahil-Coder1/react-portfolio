@@ -110,7 +110,7 @@ const Myprojects = () => {
                             <a href="https://climatetown.vercel.app" target="_blank" style={{"text-decoration":"none"}}>
                             <img alt='logo' src={weather} className="image-cls" />
                                 <p>Web Design</p>
-                                <h3>Weather-react-app</h3></a>
+                                <h3>Weather App</h3></a>
                             </div>
                         </div>
                         <div className="box-div" id='box6'>
