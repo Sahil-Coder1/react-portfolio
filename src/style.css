@@ -9,6 +9,31 @@
   scroll-behavior: smooth;
 
 }
+
+@keyframes reavealBottom {
+  0% {
+    opacity: 0%;
+    transform: translateY(-200px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes reavealTop {
+  0% {
+    opacity: 0%;
+    transform: translateY(200px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
+
 @keyframes reavealRight {
   0% {
     opacity: 0%;
@@ -58,7 +83,7 @@ body {
 .header {
   height: auto;
   display: flex;
-  animation: reavealRight 1s linear;
+  animation: reavealBottom 0.3s linear;
   
 }
 
@@ -135,8 +160,7 @@ body {
 
 .content-body {
   display: flex;
-  animation: reavealLeft 1s linear;
-
+  animation: reavealTop 0.5s linear;
 }
 
 .div-name {
@@ -167,7 +191,7 @@ body {
   height: 500px;
   width: 40%;
   padding-top: 0px;
-  animation: reavealRight 1s linear;
+  animation: reavealTop 1s linear;
 
 }
 
@@ -219,9 +243,11 @@ body {
 
 .div-name2 {
   margin-top: 50px;
-  animation: reavealRight 1s linear;
-  animation-timeline: view();
-  animation-range: entry 0;
+  animation: revealRight 1s linear;
+  -webkit-animation: revealRight 1s linear;
+  -moz-animation: revealRight 1s linear;
+  -ms-animation: revealRight 1s linear;
+  -o-animation: revealRight 1s linear;
 }
 
 .div-name2 p {
@@ -243,9 +269,11 @@ body {
 .experience-meter {
   font-size: 20px;
   font-weight: bold;
-  animation: reavealRight 1s linear;
-  animation-timeline: view();
-  animation-range: entry 0;
+  animation: revealRight 1s linear;
+  -webkit-animation: revealRight 1s linear;
+  -moz-animation: revealRight 1s linear;
+  -ms-animation: revealRight 1s linear;
+  -o-animation: revealRight 1s linear;
 }
 
 .prog-parent {
