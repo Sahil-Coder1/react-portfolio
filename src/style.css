@@ -243,11 +243,9 @@ body {
 
 .div-name2 {
   margin-top: 50px;
-  animation: revealRight 1s linear;
-  -webkit-animation: revealRight 1s linear;
-  -moz-animation: revealRight 1s linear;
-  -ms-animation: revealRight 1s linear;
-  -o-animation: revealRight 1s linear;
+  animation: reavealRight 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0;
 }
 
 .div-name2 p {
@@ -269,11 +267,9 @@ body {
 .experience-meter {
   font-size: 20px;
   font-weight: bold;
-  animation: revealRight 1s linear;
-  -webkit-animation: revealRight 1s linear;
-  -moz-animation: revealRight 1s linear;
-  -ms-animation: revealRight 1s linear;
-  -o-animation: revealRight 1s linear;
+  animation: reavealRight 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0;
 }
 
 .prog-parent {

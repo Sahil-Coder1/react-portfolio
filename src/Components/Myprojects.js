@@ -107,30 +107,34 @@ const Myprojects = () => {
                         </div>
                         <div className="box-div" id='box5'>
                             <div>
-                                <img alt='logo' src={weather} className="image-cls" />
+                            <a href="https://climatetown.vercel.app" target="_blank" style={{"text-decoration":"none"}}>
+                            <img alt='logo' src={weather} className="image-cls" />
                                 <p>Web Design</p>
-                                <h3>Weather-react-app</h3>
+                                <h3>Weather-react-app</h3></a>
                             </div>
                         </div>
                         <div className="box-div" id='box6'>
                             <div>
+                            <a href="https://trial-f3b86.web.app" target="_blank" style={{"text-decoration":"none"}}>
                                 <img alt='logo' src={shortner} className="image-cls" />
                                 <p>Web Design</p>
-                                <h3>Url Shortner</h3>
+                                <h3>Url Shortner</h3></a>
                             </div>
                         </div>
                         <div className="box-div" id='box4'>
                             <div>
+                            <a href="https://ai-detector.netlify.app" target="_blank" style={{"text-decoration":"none"}}>
                                 <img alt='logo' src={ai} className="image-cls" />
                                 <p>Web Design</p>
-                                <h3>AI-Content-Detector</h3>
+                                <h3>AI-Content-Detector</h3></a>
                             </div>
                         </div>
                         <div className="box-div" id='box13'>
                             <div>
+                            <a href="https://generatepasw.vercel.app" target="_blank" style={{"text-decoration":"none"}}>
                                 <img alt='logo' src={pass} className="image-cls" />
                                 <p>Web Design</p>
-                                <h3>Password Generator</h3>
+                                <h3>Password Generator</h3></a>
                             </div>
                         </div>
                         <div className="box-div" id='box7'>
