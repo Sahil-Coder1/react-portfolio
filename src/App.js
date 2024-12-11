@@ -33,7 +33,7 @@ function App() {
       cursor.style.left = e.pageX - 10 + "px";
     });
     AOS.init({
-      duration: 1000, // Animation duration (in ms)
+      duration: 500, // Animation duration (in ms)
       once: false,     // Whether animation should happen only once
   });
   }, []);

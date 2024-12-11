@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="nav"><img alt='logo' src={logo} height="60" />
                 <h2>Sahil Verma</h2>
             </div>
-            <div className="navigator">
+            <div className="navigator" data-aos="fade-down">
                 <ul type="none">
                     <li>Home</li>
                     <li>About Me</li>
