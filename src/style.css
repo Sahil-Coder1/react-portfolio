@@ -83,7 +83,7 @@ body {
 .header {
   height: auto;
   display: flex;
-  animation: reavealBottom 0.3s linear;
+  /* animation: reavealBottom 0.3s linear; */
   
 }
 
@@ -160,7 +160,7 @@ body {
 
 .content-body {
   display: flex;
-  animation: reavealTop 0.5s linear;
+  /* animation: reavealTop 0.5s linear; */
 }
 
 .div-name {
@@ -191,7 +191,7 @@ body {
   height: 500px;
   width: 40%;
   padding-top: 0px;
-  animation: reavealTop 1s linear;
+  /* animation: reavealTop 1s linear; */
 
 }
 
@@ -243,9 +243,9 @@ body {
 
 .div-name2 {
   margin-top: 50px;
-  animation: reavealRight 1s linear;
-  animation-timeline: view();
-  animation-range: entry 0;
+  /* animation: reavealRight 1s linear; */
+  /* animation-timeline: view(); */
+  /* animation-range: entry 0; */
 }
 
 .div-name2 p {
@@ -267,9 +267,9 @@ body {
 .experience-meter {
   font-size: 20px;
   font-weight: bold;
-  animation: reavealRight 1s linear;
-  animation-timeline: view();
-  animation-range: entry 0;
+  /* animation: reavealRight 1s linear; */
+  /* animation-timeline: view(); */
+  /* animation-range: entry 0; */
 }
 
 .prog-parent {
@@ -346,9 +346,9 @@ body {
   background-color: #f5f5f5;
   text-align: start;
   padding: 35 16 20 16;
-  animation: reavealLeft 0.5s linear;
-  animation-timeline: view();
-  animation-range: entry 0;
+  /* animation: reavealLeft 0.5s linear; */
+  /* animation-timeline: view(); */
+  /* animation-range: entry 0; */
 }
 
 .round-box:hover {

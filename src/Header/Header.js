@@ -3,12 +3,12 @@ import logo from "../image/logo.png";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header" >
       <img src={logo} height="60" alt="logo" />
       <h2>
         <span>S</span>ahil Verma
       </h2>
-      <div className="menu-container">
+      <div className="menu-container" data-aos="fade-left">
         <ul type="none">
           <a href=".">
             <li>Home</li>
@@ -30,7 +30,7 @@ const Header = () => {
           </a>
         </ul>
       </div>
-      <a href={cv} download="Sahil Verma.pdf">
+      <a href={cv} download="Sahil Verma.pdf"data-aos="fade-left">
         <button type="button" aria-label="Download CV">
           Download CV
         </button>

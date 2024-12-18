@@ -1,19 +1,19 @@
 import profile from '../image/profile.png';
 
 const About = () => {
-    return (<div >
+    return (<div  >
         <div className="content-body" id='content-body' >
             <div className="div-img" id="sec-img"><div className='stripe2' />
-                <img alt='logo' src={profile} height="500" /><br />
+                <img alt='logo' src={profile} height="500" data-aos="zoom-in-up"/><br />
             </div>
             <div className="div-name2" >
 
-                <h1>About Me</h1>
-                <p>I fell in love with Programming and Designing because feels like haven<br />I am fluent in classics like C , HTML , JavaScript , Java an React
+                <h1 data-aos="fade-left">About Me</h1>
+                <p data-aos="fade-up">I fell in love with Programming and Designing because feels like haven<br />I am fluent in classics like C , HTML , JavaScript , Java an React
                     <br />My field of Interest's are building new Web & Android Design and Products
 
                 </p><br />
-                <div className="experience-meter">
+                <div className="experience-meter" data-aos="zoom-in-up">
                     UX<br />
                     <div className="prog-back"><div className="prog-parent"><div className="ux-div"></div><div className="prog-dot"></div></div></div>
                     Website Design<br />

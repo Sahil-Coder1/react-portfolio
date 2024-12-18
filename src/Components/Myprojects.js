@@ -82,13 +82,13 @@ const Myprojects = () => {
   };
 
   return (
-    <div className="my-projects" id="my-projects">
+    <div className="my-projects" id="my-projects" >
       <h1>My Projects</h1>
       <p className="desc">
         Here are several projects that I have worked on and would like to
         showcase.
       </p>
-      <div className="pro-type">
+      <div className="pro-type" data-aos="zoom-in-up">
         <ul type="none">
           <li onClick={showAll}>All</li>
           <li onClick={uiux}>UI/UX</li>
@@ -97,29 +97,29 @@ const Myprojects = () => {
           <li onClick={showGraphic}>Graphic Design</li>
         </ul>
       </div>
-      <div className="work">
-        <div className="box-div" id="box1">
+      <div className="work" >
+        <div className="box-div" id="box1" data-aos="zoom-in-up">
           <div>
             <img alt="logo" src={uxu} className="image-cls" />
             <p>UI/UX</p>
             <h3>App Download Landing Page Design</h3>
           </div>
         </div>
-        <div className="box-div" id="box2">
+        <div className="box-div" id="box2"data-aos="zoom-in-up">
           <div>
             <img alt="logo" src={uxu} className="image-cls" />
             <p>UI/UX</p>
             <h3>App Download Landing Page Design</h3>
           </div>
         </div>
-        <div className="box-div" id="box3">
+        <div className="box-div" id="box3" data-aos="zoom-in-up">
           <div>
             <img alt="logo" src={uxu} className="image-cls" />
             <p>UI/UX</p>
             <h3>App Download Landing Page Design</h3>
           </div>
         </div>
-        <div className="box-div" id="box5">
+        <div className="box-div" id="box5" data-aos="zoom-in-up">
           <div>
             <a
               href="https://climatetown.vercel.app"
@@ -132,7 +132,7 @@ const Myprojects = () => {
             </a>
           </div>
         </div>
-        <div className="box-div" id="box6">
+        <div className="box-div" id="box6" data-aos="zoom-in-up">
           <div>
             <a
               href="https://trial-f3b86.web.app"
@@ -145,7 +145,7 @@ const Myprojects = () => {
             </a>
           </div>
         </div>
-        <div className="box-div" id="box4">
+        <div className="box-div" id="box4" data-aos="zoom-in-up">
           <div>
             <a
               href="https://ai-detector.netlify.app"
@@ -158,7 +158,7 @@ const Myprojects = () => {
             </a>
           </div>
         </div>
-        <div className="box-div" id="box13">
+        <div className="box-div" id="box13" data-aos="zoom-in-up">
           <div>
             <a
               href="https://generatepasw.vercel.app"
@@ -171,42 +171,42 @@ const Myprojects = () => {
             </a>
           </div>
         </div>
-        <div className="box-div" id="box7">
+        <div className="box-div" id="box7" data-aos="zoom-in-up"> 
           <div>
             <img alt="logo" src={uxu} className="image-cls" />
             <p>App Design</p>
             <h3>App Download Landing Page Design</h3>
           </div>
         </div>
-        <div className="box-div" id="box8">
+        <div className="box-div" id="box8" data-aos="zoom-in-up">
           <div>
             <img alt="logo" src={uxu} className="image-cls" />
             <p>App Design</p>
             <h3>App Download Landing Page Design</h3>
           </div>
         </div>
-        <div className="box-div" id="box9">
+        <div className="box-div" id="box9" data-aos="zoom-in-up">
           <div>
             <img alt="logo" src={uxu} className="image-cls" />
             <p>App Design</p>
             <h3>App Download Landing Page Design</h3>
           </div>
         </div>
-        <div className="box-div" id="box10">
+        <div className="box-div" id="box10" data-aos="zoom-in-up">
           <div>
             <img alt="logo" src={uxu} className="image-cls" />
             <p>Graphic Design</p>
             <h3>App Download Landing Page Design</h3>
           </div>
         </div>
-        <div className="box-div" id="box11">
+        <div className="box-div" id="box11" data-aos="zoom-in-up">
           <div>
             <img alt="logo" src={uxu} className="image-cls" />
             <p>Graphic Design</p>
             <h3>App Download Landing Page Design</h3>
           </div>
         </div>
-        <div className="box-div" id="box12">
+        <div className="box-div" id="box12"data-aos="zoom-in-up">
           <div>
             <img alt="logo" src={uxu} className="image-cls" />
             <p>Graphic Design</p>

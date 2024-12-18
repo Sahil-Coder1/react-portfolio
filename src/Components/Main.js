@@ -16,9 +16,9 @@ const Main = () => {
   };
 
   return (
-    <div div="main">
+    <div className="main" >
       <div className="line" />
-      <div className="content-body">
+      <div className="content-body" data-aos="fade-up">
         <div className="div-name">
           <h3>Hi I am</h3>
           <h2>Sahil Verma</h2>

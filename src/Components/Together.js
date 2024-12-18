@@ -8,15 +8,15 @@ const Together = () => {
   };
   return (
     <div className="together" id="together">
-      <h1>Lets Design Together</h1>
-      <p className="desc">
+      <h1 data-aos="fade-right">Lets Design Together</h1>
+      <p className="desc" data-aos="fade-up">
         Got a killer website or app idea? Let's turn your vision into reality.
         Together, we'll craft stunning, user-friendly designs that captivate
         your audience.
       </p>
       <div>
-        <input id="desText" type="text" placeholder="Your Idea" />
-        <button onClick={contactMe}>Contact Me</button>
+        <input id="desText" type="text" placeholder="Your Idea" data-aos="fade-right"/>
+        <button onClick={contactMe} data-aos="fade-left">Contact Me</button>
       </div>
     </div>
   );
