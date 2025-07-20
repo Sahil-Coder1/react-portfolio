@@ -22,5 +22,6 @@ Because I have passion of web and android developmet , and I liked so much the d
 
 * ```
   cd react-portfolio
+  npm install
   npm start
   ```
