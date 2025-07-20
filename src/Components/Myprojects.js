@@ -1,218 +1,157 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ai from "../image/ai-content.png";
 import uxu from "../image/uiux.png";
 import shortner from "../image/url-shortner.png";
 import weather from "../image/weather.png";
 import pass from "../image/passgen.png";
+import studentsenior from "../image/studentsenior.png";
+import carrental from "../image/carrental.png";
+import portfolio from "../image/portfolio.png";
+
+const projects = [
+  {
+    id: "p8",
+    title: "Student Senior Platform",
+    category: "Web Design",
+    image: studentsenior,
+    link: "https://www.studentsenior.com",
+  },
+  {
+    id: "p1",
+    title: "App Download Landing Page Design",
+    category: "UI/UX",
+    image: uxu,
+    link: null,
+  },
+  {
+    id: "p11",
+    title: "Portfolio Website",
+    category: "Web Design",
+    image: portfolio,
+    link: "https://sahil-coder.vercel.app",
+  },
+  {
+    id: "p9",
+    title: "Car Rental App",
+    category: "Web Design",
+    image: carrental,
+    link: "https://gorent1.vercel.app",
+  },
+  {
+    id: "p4",
+    title: "URL Shortener",
+    category: "Web Design",
+    image: shortner,
+    link: "https://trial-f3b86.web.app",
+  },
+  {
+    id: "p5",
+    title: "Password Generator",
+    category: "Web Design",
+    image: pass,
+    link: "https://generatepasw.vercel.app",
+  },
+  {
+    id: "p3",
+    title: "Weather App (Climatetown)",
+    category: "Web Design",
+    image: weather,
+    link: "https://climatetown.vercel.app",
+  },
+  {
+    id: "p2",
+    title: "AI Content Detector",
+    category: "Web Design",
+    image: ai,
+    link: "https://ai-detector.netlify.app",
+  },
+  {
+    id: "p6",
+    title: "App Landing UI",
+    category: "App Design",
+    image: uxu,
+    link: null,
+  },
+  {
+    id: "p7",
+    title: "Graphic Poster Example",
+    category: "Graphic Design",
+    image: uxu,
+    link: null,
+  },
+  {
+    id: "p10",
+    title: "Online Exam System (Java)",
+    category: "App Design",
+    image: uxu, // Replace with related image
+    link: null, // Optional if not hosted
+  },
+];
 
 const Myprojects = () => {
+  const [filter, setFilter] = useState("Web Design");
+
+  const filteredProjects =
+    filter === "All"
+      ? projects
+      : projects.filter((project) => project.category === filter);
+
   useEffect(() => {
-    showWeb();
+    window.scrollTo(0, 0);
   }, []);
 
-  const showWeb = () => {
-    removeAll();
-    setVisible("box4");
-    setVisible("box5");
-    setVisible("box6");
-    setVisible("box13");
-  };
-  const showApp = () => {
-    removeAll();
-    setVisible("box7");
-    setVisible("box8");
-    setVisible("box9");
-  };
-  const showGraphic = () => {
-    removeAll();
-    setVisible("box10");
-    setVisible("box11");
-    setVisible("box12");
-  };
-
-  const uiux = () => {
-    removeAll();
-    setVisible("box1");
-    setVisible("box2");
-    setVisible("box3");
-  };
-  const setVisible = (view) => {
-    document.getElementById(view).style.cssText = `display:block;`;
-  };
-
-  const removeOne = (view) => {
-    document.getElementById(view).style.cssText = `
-        display:none;
-        `;
-  };
-  const removeAll = () => {
-    removeOne("box1");
-    removeOne("box2");
-    removeOne("box3");
-    removeOne("box4");
-    removeOne("box5");
-    removeOne("box6");
-    removeOne("box7");
-    removeOne("box8");
-    removeOne("box9");
-    removeOne("box10");
-    removeOne("box11");
-    removeOne("box12");
-    removeOne("box13");
-  };
-  const showOne = (view) => {
-    const box = document.getElementById(view);
-    box.style.display = "block";
-  };
-  const showAll = () => {
-    showOne("box1");
-    showOne("box2");
-    showOne("box3");
-    showOne("box4");
-    showOne("box5");
-    showOne("box6");
-    showOne("box7");
-    showOne("box8");
-    showOne("box9");
-    showOne("box10");
-    showOne("box11");
-    showOne("box12");
-    showOne("box13");
-  };
-
   return (
-    <div className="my-projects" id="my-projects" >
+    <div className="my-projects" id="my-projects">
       <h1>My Projects</h1>
       <p className="desc">
         Here are several projects that I have worked on and would like to
         showcase.
       </p>
+
+      {/* FILTER BUTTONS */}
       <div className="pro-type" data-aos="zoom-in-up">
         <ul type="none">
-          <li onClick={showAll}>All</li>
-          <li onClick={uiux}>UI/UX</li>
-          <li onClick={showWeb}>Web Design</li>
-          <li onClick={showApp}>App Design</li>
-          <li onClick={showGraphic}>Graphic Design</li>
+          {["All", "UI/UX", "Web Design", "App Design", "Graphic Design"].map(
+            (cat) => (
+              <li key={cat} onClick={() => setFilter(cat)}>
+                {cat}
+              </li>
+            )
+          )}
         </ul>
       </div>
-      <div className="work" >
-        <div className="box-div" id="box1" data-aos="zoom-in-up">
-          <div>
-            <img alt="logo" src={uxu} className="image-cls" />
-            <p>UI/UX</p>
-            <h3>App Download Landing Page Design</h3>
+
+      {/* PROJECT GRID */}
+      <div className="work">
+        {filteredProjects.map((proj) => (
+          <div
+            className="box-div"
+            id={proj.id}
+            key={proj.id}
+            data-aos="zoom-in-up"
+          >
+            <div>
+              {proj.link ? (
+                <a
+                  href={proj.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  <img alt="project" src={proj.image} className="image-cls" />
+                  <p>{proj.category}</p>
+                  <h3>{proj.title}</h3>
+                </a>
+              ) : (
+                <>
+                  <img alt="project" src={proj.image} className="image-cls" />
+                  <p>{proj.category}</p>
+                  <h3>{proj.title}</h3>
+                </>
+              )}
+            </div>
           </div>
-        </div>
-        <div className="box-div" id="box2"data-aos="zoom-in-up">
-          <div>
-            <img alt="logo" src={uxu} className="image-cls" />
-            <p>UI/UX</p>
-            <h3>App Download Landing Page Design</h3>
-          </div>
-        </div>
-        <div className="box-div" id="box3" data-aos="zoom-in-up">
-          <div>
-            <img alt="logo" src={uxu} className="image-cls" />
-            <p>UI/UX</p>
-            <h3>App Download Landing Page Design</h3>
-          </div>
-        </div>
-        <div className="box-div" id="box5" data-aos="zoom-in-up">
-          <div>
-            <a
-              href="https://climatetown.vercel.app"
-              target="_blank"
-              style={{ "text-decoration": "none" }}
-            >
-              <img alt="logo" src={weather} className="image-cls" />
-              <p>Web Design</p>
-              <h3>Weather App</h3>
-            </a>
-          </div>
-        </div>
-        <div className="box-div" id="box6" data-aos="zoom-in-up">
-          <div>
-            <a
-              href="https://trial-f3b86.web.app"
-              target="_blank"
-              style={{ "text-decoration": "none" }}
-            >
-              <img alt="logo" src={shortner} className="image-cls" />
-              <p>Web Design</p>
-              <h3>Url Shortner</h3>
-            </a>
-          </div>
-        </div>
-        <div className="box-div" id="box4" data-aos="zoom-in-up">
-          <div>
-            <a
-              href="https://ai-detector.netlify.app"
-              target="_blank"
-              style={{ "text-decoration": "none" }}
-            >
-              <img alt="logo" src={ai} className="image-cls" />
-              <p>Web Design</p>
-              <h3>AI-Content-Detector</h3>
-            </a>
-          </div>
-        </div>
-        <div className="box-div" id="box13" data-aos="zoom-in-up">
-          <div>
-            <a
-              href="https://generatepasw.vercel.app"
-              target="_blank"
-              style={{"text-decoration": "none"}}
-            >
-              <img alt="logo" src={pass} className="image-cls" />
-              <p>Web Design</p>
-              <h3>Password Generator</h3>
-            </a>
-          </div>
-        </div>
-        <div className="box-div" id="box7" data-aos="zoom-in-up"> 
-          <div>
-            <img alt="logo" src={uxu} className="image-cls" />
-            <p>App Design</p>
-            <h3>App Download Landing Page Design</h3>
-          </div>
-        </div>
-        <div className="box-div" id="box8" data-aos="zoom-in-up">
-          <div>
-            <img alt="logo" src={uxu} className="image-cls" />
-            <p>App Design</p>
-            <h3>App Download Landing Page Design</h3>
-          </div>
-        </div>
-        <div className="box-div" id="box9" data-aos="zoom-in-up">
-          <div>
-            <img alt="logo" src={uxu} className="image-cls" />
-            <p>App Design</p>
-            <h3>App Download Landing Page Design</h3>
-          </div>
-        </div>
-        <div className="box-div" id="box10" data-aos="zoom-in-up">
-          <div>
-            <img alt="logo" src={uxu} className="image-cls" />
-            <p>Graphic Design</p>
-            <h3>App Download Landing Page Design</h3>
-          </div>
-        </div>
-        <div className="box-div" id="box11" data-aos="zoom-in-up">
-          <div>
-            <img alt="logo" src={uxu} className="image-cls" />
-            <p>Graphic Design</p>
-            <h3>App Download Landing Page Design</h3>
-          </div>
-        </div>
-        <div className="box-div" id="box12"data-aos="zoom-in-up">
-          <div>
-            <img alt="logo" src={uxu} className="image-cls" />
-            <p>Graphic Design</p>
-            <h3>App Download Landing Page Design</h3>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

@@ -1,48 +1,138 @@
-import graphic from '../image/graphic-design.png';
-import ui from '../image/ui-design.png';
-import web from '../image/web-design.png';
-import ux from '../image/ux-design.png';
+import React from "react";
+import {
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaJava,
+  FaHtml5,
+  FaCss3Alt,
+} from "react-icons/fa";
+import {
+  SiFigma,
+  SiFirebase,
+  SiJavascript,
+  SiMongodb,
+  SiMysql,
+  SiPostman,
+  SiRedux,
+  SiTailwindcss,
+  SiTypescript,
+  SiExpress,
+  SiLinux,
+} from "react-icons/si";
+import { CgCPlusPlus } from "react-icons/cg";
 
+const TechStack = () => {
+  return (
+    <section className="tech-section" id="techstack">
+      <div className="tech-container">
+        <h2 className="tech-title">Tech Stack</h2>
 
-const Services = () =>{
-    return(
-        
-        <div className="services-div" id="services-div" >
-        <div className='line'></div>
-        <h1 data-aos="fade-right">Services</h1>
-        <p data-aos="fade-up" className='desc'>Make your business shine online with multiple services designed just for you<br />Some of the services are below</p>
-        <ul type="none">
-            <li>
-                <div className="round-box" data-aos="zoom-in-up">
-                    <img alt='logo' src={ux} /> <br />
-                    <h2>UI/UX</h2>
-                    <p>I focus on creating a seamless and meaningful user experience by understanding user needs</p>
-                </div>
-            </li>
-            <li>
-                <div className="round-box" data-aos="zoom-in-up">
-                    <img alt='logo' src={web} /> <br />
-                    <h2>Web Design</h2>
-                    <p>Includes visual,UX,and technical aspects,arranging elements,choosing best colors, and images.</p>
-                </div>
-            </li>
-            <li>
-                <div className="round-box" data-aos="zoom-in-up">
-                    <img alt='logo' src={ui} /> <br />
-                    <h2>App Design</h2>
-                    <p>Creating the app's flow and structure,Making stylistic choices from colors to fonts, app security</p>
-                </div>
-            </li>
-            <li>
-                <div className="round-box" data-aos="zoom-in-up">
-                    <img alt='logo' src={graphic} /> <br />
-                    <h2>App Development</h2>
-                    <p> The process of planning, designing, creating, testing, and deploying a software application</p>
-                </div>
-            </li>
-        </ul>
-    </div>
-    )
-}
+        {/* GROUPS */}
+        <div className="tech-group">
+          <h3>Languages</h3>
+          <div className="tech-grid">
+            <div className="tech-card">
+              <CgCPlusPlus />
+              <span>C</span>
+            </div>
+            <div className="tech-card">
+              <FaJava color="#007396" />
+              <span>Java</span>
+            </div>
+            <div className="tech-card">
+              <SiJavascript color="#f0db4f" />
+              <span>JavaScript</span>
+            </div>
+            <div className="tech-card">
+              <SiTypescript color="#007ACC" />
+              <span>TypeScript</span>
+            </div>
+          </div>
+        </div>
 
-export default Services;
+        <div className="tech-group">
+          <h3>Frontend</h3>
+          <div className="tech-grid">
+            <div className="tech-card">
+              <FaHtml5 color="#e34c26" />
+              <span>HTML</span>
+            </div>
+            <div className="tech-card">
+              <FaCss3Alt color="#264de4" />
+              <span>CSS</span>
+            </div>
+            <div className="tech-card">
+              <FaReact color="#61DBFB" />
+              <span>React</span>
+            </div>
+            <div className="tech-card">
+              <SiRedux color="#764ABC" />
+              <span>Redux</span>
+            </div>
+            <div className="tech-card">
+              <SiTailwindcss color="#38bdf8" />
+              <span>Tailwind</span>
+            </div>
+            <div className="tech-card">
+              <SiFigma color="#f24e1e" />
+              <span>Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="tech-group">
+          <h3>Backend</h3>
+          <div className="tech-grid">
+            <div className="tech-card">
+              <FaNodeJs color="#68A063" />
+              <span>Node.js</span>
+            </div>
+            <div className="tech-card">
+              <SiExpress color="#000" />
+              <span>Express</span>
+            </div>
+            <div className="tech-card">
+              <SiFirebase color="#FFCA28" />
+              <span>Firebase</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="tech-group">
+          <h3>Database</h3>
+          <div className="tech-grid">
+            <div className="tech-card">
+              <SiMongodb color="#47A248" />
+              <span>MongoDB</span>
+            </div>
+            <div className="tech-card">
+              <SiMysql color="#00758F" />
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="tech-group">
+          <h3>Tools & OS</h3>
+          <div className="tech-grid">
+            <div className="tech-card">
+              <FaGitAlt color="#F1502F" />
+              <span>Git</span>
+            </div>
+            <div className="tech-card">
+              <SiPostman color="#FF6C37" />
+              <span>Postman</span>
+            </div>
+            <div className="tech-card">
+              <SiLinux color="#000000" />
+              <span>Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default TechStack;

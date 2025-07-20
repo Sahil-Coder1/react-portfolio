@@ -1,13 +1,15 @@
-import cv from "../resume/CV(Sahil Verma).pdf";
+import cv from "../resume/Sahil_Verma.pdf";
 import logo from "../image/logo.png";
 
 const Header = () => {
   return (
-    <div className="header" >
-      <img src={logo} height="60" alt="logo" />
-      <h2>
-        <span>S</span>ahil Verma
-      </h2>
+    <div className="header">
+      <div className="iconwithname" data-aos="fade-right">
+        <img src={logo} height="60" alt="logo" />
+        <h2>
+          <span>S</span>ahil Verma
+        </h2>
+      </div>
       <div className="menu-container" data-aos="fade-left">
         <ul type="none">
           <a href=".">
@@ -30,7 +32,7 @@ const Header = () => {
           </a>
         </ul>
       </div>
-      <a href={cv} download="Sahil Verma.pdf"data-aos="fade-left">
+      <a href={cv} download="Sahil Verma.pdf" data-aos="fade-left">
         <button type="button" aria-label="Download CV">
           Download CV
         </button>

@@ -5,9 +5,8 @@
 * {
   margin: 0px;
   font-family: poppins;
-  transition: all .8s ease-in-out;
+  transition: all 0.8s ease-in-out;
   scroll-behavior: smooth;
-
 }
 
 @keyframes reavealBottom {
@@ -58,17 +57,14 @@
   }
 }
 
-
 body {
   margin: 0;
   background-color: white;
-
 }
 
 ::-webkit-scrollbar {
   width: 10px;
   height: 0px;
-
 }
 
 ::-webkit-scrollbar-thumb {
@@ -84,12 +80,10 @@ body {
   height: auto;
   display: flex;
   /* animation: reavealBottom 0.3s linear; */
-  
 }
 
 .header img {
   padding: 4px;
-
 }
 
 .header h2 {
@@ -129,7 +123,7 @@ body {
   border: none;
   color: white;
   cursor: pointer;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
 }
 
 .header button {
@@ -192,7 +186,6 @@ body {
   width: 40%;
   padding-top: 0px;
   /* animation: reavealTop 1s linear; */
-
 }
 
 .div-img img {
@@ -224,7 +217,6 @@ body {
   border: none;
   color: white;
   font-size: 16px;
-
 }
 
 .hire-btn:hover {
@@ -295,14 +287,14 @@ body {
 }
 
 .app-div {
-  width: 95%;
+  width: 80%;
   height: 100%;
   border-radius: 50px;
   background-color: var(--primary);
 }
 
 .graphic-div {
-  width: 92%;
+  width: 79%;
   height: 100%;
   border-radius: 50px;
   background-color: var(--primary);
@@ -393,7 +385,7 @@ body {
   background-color: var(--primary);
   color: white;
   cursor: pointer;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 i {
@@ -416,7 +408,6 @@ i:hover {
   height: auto;
   border-radius: 10px;
   margin: 8 16 8 16;
-
 }
 
 .image-cls {
@@ -558,7 +549,8 @@ input:focus {
   left: 50%;
   border-radius: 50px;
   border: 2px solid var(--primary);
-  animation: size 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite alternate-reverse;
+  animation: size 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite
+    alternate-reverse;
   transition: all 0.2s ease-out;
   pointer-events: none;
 }
@@ -572,9 +564,7 @@ input:focus {
   100% {
     transform: scale(1);
     box-shadow: 0px 0px 16px #fc6c04;
-    
   }
-
 }
 
 .strip2 {
@@ -586,7 +576,7 @@ input:focus {
   opacity: 0.5;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   * {
     margin: 0px;
   }
@@ -598,7 +588,6 @@ input:focus {
   ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
-
   }
 
   .header button {
@@ -606,8 +595,7 @@ input:focus {
   }
 
   .menu-container {
-    width: '50%';
-
+    width: "50%";
   }
 
   .header ul {
@@ -626,7 +614,6 @@ input:focus {
     height: 100%;
     width: 85%;
     padding: 16px 16px 16px 16px;
-
   }
 
   .strip2 {
@@ -707,7 +694,6 @@ input:focus {
   .services-div ul {
     display: grid;
     padding: 8px;
-
   }
 
   .services-div ul li {
@@ -734,7 +720,6 @@ input:focus {
 
   .pro-type ul {
     display: inline-block;
-
   }
 
   .pro-type ul li {
@@ -772,13 +757,11 @@ input:focus {
 
   .navigator {
     padding: 0px;
-
   }
 
   .navigator ul {
     width: 100%;
     display: none;
-
   }
 
   .copyright {
@@ -797,7 +780,6 @@ input:focus {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
   .header ul {
     display: none;
   }
@@ -829,7 +811,6 @@ input:focus {
 }
 
 @media (min-width: 1367px) {
-
   .strip {
     transform: translateX(210px) translateY(200px);
   }
@@ -842,5 +823,4 @@ input:focus {
     opacity: 0.5;
     transform: translateX(130px) translateY(210px);
   }
-
 }

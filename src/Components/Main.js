@@ -1,11 +1,17 @@
 import profile from "../image/profile.png";
 
 const Main = () => {
-  const data = {
-    facebook: "https://www.facebook.com/profile.php?id=100028138461886",
-    linkedin: "https://www.linkedin.com/in/sahil-verma1",
-    github: "https://github.com/Sahil-Coder1",
-  };
+  const socialLinks = [
+    {
+      link: "https://www.linkedin.com/in/sahil-verma1",
+      icon: "fa-brands fa-linkedin",
+    },
+    { link: "https://github.com/Sahil-Coder1", icon: "fa-brands fa-github" },
+    {
+      link: "https://www.hackerrank.com/profile/sahil_coder1",
+      icon: "fa-brands fa-hackerrank",
+    },
+  ];
 
   const contactMe = () => {
     window.open(
@@ -16,7 +22,7 @@ const Main = () => {
   };
 
   return (
-    <div className="main" >
+    <div className="main">
       <div className="line" />
       <div className="content-body" data-aos="fade-up">
         <div className="div-name">
@@ -26,10 +32,9 @@ const Main = () => {
             UI & UX <p>Designer</p>
           </h1>
           <p>
-            A passionate Full Stack Web & Android Developer 🚀 having an
-            <br /> experience of building Web and Mobile applications with
-            JavaScript / Reactjs / Java and some other cool libraries and
-            frameworks.
+            A passionate Full Stack Web Developer 🚀 experienced in building web
+            apps with React.js, Node.js, MongoDB, and Tailwind CSS, focused on
+            clean UI and scalable backend solutions.
           </p>
           <button className="hire-btn" onClick={contactMe}>
             Hire Me
@@ -42,18 +47,19 @@ const Main = () => {
           </div>
           <img alt="logo" src={profile} />
           <br />
-          <a href={data.facebook}>
-            {" "}
-            <i className="fa-brands fa-facebook"></i>
-          </a>
-          &nbsp;&nbsp;&nbsp;
-          <a href={data.github}>
-            <i className="fa-brands fa-github"></i>
-          </a>
-          &nbsp;&nbsp;&nbsp;
-          <a href={data.linkedin}>
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              gap: "10px",
+            }}
+          >
+            {socialLinks.map((data) => (
+              <a href={data.link}>
+                <i className={data.icon}></i>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>

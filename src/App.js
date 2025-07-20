@@ -12,8 +12,8 @@ import Testimonial from "./Components/Testimonial";
 import Footer from "./Footer/Footer";
 import Together from "./Components/Together";
 import Main from "./Components/Main";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 function App() {
   window.onscroll = () => {
@@ -34,14 +34,12 @@ function App() {
     });
     AOS.init({
       duration: 500, // Animation duration (in ms)
-      once: false,     // Whether animation should happen only once
-  });
+      once: false, // Whether animation should happen only once
+    });
   }, []);
 
-  
-
   return (
-    <div className="body" >
+    <div className="body">
       <head>
         <title>Sahil Verma - Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -66,7 +64,7 @@ function App() {
       <About />
       <Services />
       <Myprojects />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Together />
       <Footer />
       <div className="cursor" />
